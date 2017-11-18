@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+	<title>Google</title>
+
+	<style type="text/css">
+		
+		body
+	{
+		font-family: 'Roboto', sans-serif;
+		color:#666666;
+	}
+
+		.navbar {
+			min-width: 255px;
+			height: 30px;
+			font-size: 13px;
+			float:right;
+			list-style-type: none;
+			text-align: center;
+		}
+
+		.navbar li{
+			display: inline-block;
+			padding-left: 15px;
+		}
+
+		#app{
+			height: 18px;
+			width: 18px;
+			padding-top: 2.5px;
+			padding-bottom: 2.5px;
+			margin:2px;
+			color:#666666;
+		}
+
+		#bell{
+			height: 22px;
+			width: 22px;
+			padding-top: 2.5px;
+			padding-bottom: 2.5px;
+			margin: 2px;
+		}
+
+		#user{
+			height: 35px;
+			width: 35px;
+		}
+
+
+		.navbar li a{
+		text-decoration: none;
+		margin-top: 0px;
+	}
+
+		.top li a:link{
+		color:#666666;
+		}
+
+		.top li a:visited{
+		color: #609;
+		}
+
+		.top li a:hover{
+		text-decoration: underline;
+		}
+
+	/*.top li a:active{
+		text-decoration: underline;
+		} */
+
+		.black a:link{
+
+		}
+
+		.abc a{
+			line-height: 24px;
+    		outline: none;
+    		vertical-align: middle;
+		}
+
+		.logo{
+			clear:both;
+			height:233px;
+			margin-top:89px;
+			display: block;
+			text-align: center;
+		}
+		.logo img{
+			padding-top: 109px;
+
+		}
+		.search{
+			text-align: center;
+		}
+		input[type=text]{
+			height: 44px;
+			width: 484px;
+			vertical-align: top;
+			border: 1px rgba(0,0,0,0.16);
+    		border-radius: 2px;
+    		box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+    		
+    		
+		}
+
+		input[type=text]:focus{
+    		box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2)
+		}
+
+		#mic {
+			height: 40px;
+			position: relative;
+			float: right;
+			z-index: 1;
+			display:block;
+		}
+
+		#mic{
+			height: 25px;
+    		padding: 0;
+    		display: inline-block;
+    		margin: 0;
+    		position: absolute;
+    		margin-left: 18px;
+		}
+
+		.botones{
+			width: 50%;
+			height: 58px;
+			margin-left: 25%;
+			margin-right: 25%
+			padding-top: 18px;
+			display: block;
+			text-align: center;
+		}
+
+		.btn {
+			width: 175px;
+			height: 40px;
+			background-color: #f2f2f2;
+			border: 1px solid #f2f2f2;
+    		border-radius: 2px;
+    		color: #757575;
+    		cursor: default;
+    		font-weight: bold;
+    		margin: 30px 4px;
+    		min-width: 54px;
+    		padding: 0 16px;
+    		text-align: center;
+    		font-size: 13px;
+		}
+		.btn:hover{
+			background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+			border: 1px solid #757575;
+    		color: black;
+    		cursor: default;
+    		box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+		}
+
+		footer{
+			width: 100%;
+			height: 41px;
+			position: fixed;
+			bottom:0;
+			background-color: #F2F2F2;
+			font-size: 13px;
+			border-top: 1px solid #e4e4e4;
+    		line-height: 28px;
+    		min-width: 980px;
+		}
+
+		footer span ul
+		{
+			list-style-type: none;
+			text-decoration: none;
+			padding-bottom: 5px;
+			margin-right: 30px;
+		}
+
+		footer span li{
+			display: inline-block;
+			padding-left: 15px;
+			vertical-align: middle;
+			text-decoration: none;
+		}
+
+		footer span li a:link{
+			color: #666;
+			text-decoration: none;
+		}
+		footer span li a:hover{
+			color: #666;
+			text-decoration: underline;
+		}
+
+		.fleft{
+			float: left;
+		}
+
+		.fright{
+			float: right;
+		}
+
+
+	</style>
+<body>
+	
+		<ul class="navbar">
+			<li ><a class"abc"href="#">Gmail</a></li>
+			<li ><a class"abc"href="#">Images</a></li>
+			<span class="black">
+				<li ><a href="#"><img id="app"src="apps.png"/></a></li>
+				<li><a href="#"><img id="bell"src="bell.png"/></a></li>
+			</span>
+			<li><a href="#"><img id="user"src="es.png"/></a></li>
+			
+		</ul>
+
+		
+		<div class="logo">
+
+			<img src="googlelogo_color_272x92dp.png"  height="92" width="272"/>
+
+		</div>
+
+		<div class="search">
+			<form>
+				<input type="text" ></input><a href="#" ><img id="mic" src="url(mic.png)"/></a>
+			</form>
+
+		</div>
+		<div class="botones">
+			<input class="btn" value="Buscar con Google" type="submit">
+			<input class="btn" value="Me siento con suerte" type="submit">
+		</div>
+
+		<footer>
+			<span class="fleft">
+			<ul>
+				<li><a href="#">Advertising</a></li>
+				<li><a href="#">Business</a></li>
+				<li><a href="#">About</a></li>
+			</ul>
+			</span>
+			<span class="fright">
+			<ul>
+				<li><a href="#">Privacy</a></li>
+				<li><a href="#">Terms</a></li>
+				<li><a href="#">Settings</a></li>
+			</ul>
+			</span>
+		</footer>
+
+
+</body>
+
+</html>
